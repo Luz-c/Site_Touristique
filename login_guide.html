@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Guide - Bénin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Poppins] bg-gray-900">
+    <div class="relative min-h-screen flex flex-col bg-cover bg-center"
+        style="background-image: linear-gradient(135deg, #1f2937 0%, #374151 100%);">
+        <div class="absolute inset-0 bg-black/70 z-0"></div>
+        <nav
+            class="relative z-10 flex items-center justify-between px-8 py-2 mt-4 mx-auto w-full max-w-6xl rounded-2xl bg-white/70 backdrop-blur-md shadow-lg">
+            <div class="flex items-center gap-2">
+                <a href="index.html"><img src="assets/img/logo-removebg-preview (1).png" alt="logo"
+                        class="w-32 h-auto"></a>
+            </div>
+            <ul class="flex gap-8 text-gray-800 font-medium">
+                <li><a href="index.html" class="hover:text-yellow-600 transition">Accueil</a></li>
+                <li><a href="sites.html" class="hover:text-yellow-600 transition">Sites Touristiques</a></li>
+                <li><a href="guides.html" class="hover:text-yellow-600 transition">Guides Touristiques</a></li>
+                <li><a href="hotels.html" class="hover:text-yellow-600 transition">Hôtels et Restaurants</a></li>
+                <li><a href="#" class="hover:text-yellow-600 transition">A propos</a></li>
+            </ul>
+            <a href="guide_register.html"
+                class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-5 py-2 rounded-xl shadow transition">Je
+                suis guide</a>
+        </nav>
+        <main class="relative z-10 flex flex-col items-center justify-center flex-1 w-full px-4 pt-16 pb-8">
+            <div class="relative min-h-screen flex items-center justify-center bg-cover bg-center"
+                style="background-image: linear-gradient(135deg, #1f2937 0%, #374151 100%);">
+                <div class="absolute inset-0 bg-black/70 z-0"></div>
+                <div class="relative z-10 w-full max-w-md mx-4">
+                    <div class="text-center mb-8">
+                        <h1 class="text-white text-3xl font-bold mb-2">Connexion</h1>
+                        <p class="text-gray-300">Accédez à votre espace guide touristique</p>
+                    </div>
+
+                    <div class="bg-black/40 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-yellow-400/20">
+                        <form id="login-form" class="space-y-6">
+                            <div>
+                                <label class="block text-white font-semibold mb-2">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Entrez votre email" required
+                                    class="w-full px-4 py-3 bg-white/10 border border-yellow-400/30 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                            </div>
+
+                            <div>
+                                <label class="block text-white font-semibold mb-2">Mot de passe</label>
+                                <div class="relative">
+                                    <input type="password" id="password" name="password"
+                                        placeholder="Entrez votre mot de passe" required
+                                        class="w-full px-4 py-3 bg-white/10 border border-yellow-400/30 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+                                    <button type="button" id="toggle-password"
+                                        class="absolute right-3 top-3 text-gray-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between">
+                                <label class="flex items-center text-white mr-2">
+                                    <input type="checkbox" id="remember" name="remember"
+                                        class="text-yellow-400 focus:ring-yellow-400 rounded">
+                                    <span class="ml-2 text-sm">Se souvenir de moi</span>
+                                </label>
+                                <a href="#" class="text-yellow-400 hover:text-yellow-300 text-sm underline">Mot de passe
+                                    oublié
+                                    ?</a>
+                            </div>
+
+                            <a href="dashboard.html" id="login-btn" type="submit"
+                                class="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                                <span id="login-text">Se connecter</span>
+                                <svg id="spinner" class="animate-spin h-5 w-5 text-gray-900 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                                </svg>
+                            </a>
+
+                            <div class="text-center">
+                                <p class="text-gray-300">
+                                    Pas encore de compte ?
+                                    <a href="guide_register.html"
+                                        class="text-yellow-400 hover:text-yellow-300 underline">S'inscrire</a>
+                                </p>
+                            </div>
+                        </form>
+
+                        <div class="mt-6 text-center">
+                            <div class="flex items-center justify-center mb-4">
+                                <div class="border-t border-gray-600 flex-1"></div>
+                                <span class="px-4 text-gray-400 text-sm">ou</span>
+                                <div class="border-t border-gray-600 flex-1"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
