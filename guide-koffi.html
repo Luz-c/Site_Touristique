@@ -13,23 +13,23 @@
   <div class="relative min-h-screen flex flex-col bg-cover bg-center"
     style="background-image: url('./assets/img/benin-hero-BB2B5jZH.jpg');">
     <div class="absolute inset-0 bg-black/80 z-0"></div>
-    <main class="relative z-10 max-w-6xl mx-auto pt-8 pb-12 px-4">
-      <div class="flex items-center gap-2 mb-6">
-        <a href="guides.html" class="flex items-center gap-2 text-white/90 hover:text-yellow-400 font-semibold text-lg">
+    <main class="relative z-10 max-w-6xl mx-auto pt-8 pb-12 px-2 sm:px-4">
+      <div class="flex items-center gap-2 mb-8">
+        <a href="guides.html" class="flex items-center gap-2 text-white/90 hover:text-yellow-400 font-semibold text-lg transition">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
           Guides touristiques
         </a>
       </div>
-      <div class="flex flex-col md:flex-row items-center md:items-end gap-6 mb-8">
+      <div class="flex flex-col md:flex-row items-center md:items-end gap-8 mb-10">
         <div class="relative">
           <img src="./assets/img/guide 1.jpg" alt="Aicha"
-            class="w-40 h-40 rounded-full object-cover border-4 border-yellow-400 shadow-xl">
+            class="w-40 h-40 rounded-full object-cover border-4 border-yellow-400 shadow-2xl transition duration-300 hover:scale-105">
         </div>
         <div class="flex-1 flex flex-col md:flex-row items-center md:items-end gap-4">
           <div
-            class="bg-yellow-700/90 rounded-3xl px-10 py-6 flex flex-col md:flex-row items-center gap-4 shadow-lg w-full md:w-auto">
+            class="bg-yellow-700/80 backdrop-blur-md rounded-3xl px-8 py-6 flex flex-col md:flex-row items-center gap-4 shadow-2xl w-full md:w-auto transition">
             <div>
               <div class="text-white text-3xl font-bold">Koffi Mensah</div>
               <div class="flex items-center gap-2 text-white/80 font-medium mt-1"><svg
@@ -40,7 +40,7 @@
                 </svg>Tanguiéta, Bénin</div>
             </div>
             <a href="#"
-              class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-full flex items-center gap-2 transition text-lg ml-0 md:ml-8">Contacts
+              class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-full flex items-center gap-2 transition-all duration-200 text-lg ml-0 md:ml-8 shadow hover:scale-105">Contacts
               <svg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5' fill='none' viewBox='0 0 24 24'
                 stroke='currentColor'>
                 <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5l7 7-7 7' />
@@ -51,13 +51,12 @@
       <div class="flex flex-col md:flex-row gap-8">
         <div class="flex-1">
           <h2 class="text-white text-3xl font-extrabold mb-4">A propos</h2>
-          <div class="text-gray-200 text-base md:text-lg mb-6">
+          <div class="text-gray-200 text-base md:text-lg mb-6 bg-black/30 rounded-xl p-4 shadow">
             Natif de Tanguiéta, aux portes du Parc National de la Pendjari, Koffi Mensah est un guide expérimenté et
             passionné par la nature, la faune sauvage et les traditions locales. Fort de plusieurs années d’expérience
             en tant qu’accompagnateur de safaris et de randonnées, il connaît chaque recoin de la région comme sa poche.
             Koffi est également un fervent défenseur de la culture yoruba et s’efforce de partager ses connaissances
-            avec ses visiteurs. Il parle couramment le français et le fon, ce qui lui permet de communiquer aisément avec
-            un large public. Sa passion pour la nature et son amour pour sa région transparaissent
+            avec ses visiteurs.
           </div>
           <div class="flex flex-wrap gap-3 mb-4">
             <span
@@ -86,27 +85,39 @@
               class="text-white/90 font-medium px-3 py-2 rounded-full bg-white/10 border border-yellow-400 text-sm">Histoire</span>
           </div>
           <div class="mb-2 text-white font-bold">Avis clients</div>
-          <div class="flex flex-wrap gap-4">
-            <div class="bg-yellow-700/80 border border-yellow-400 rounded-2xl px-6 py-4 text-white/90 max-w-xs">
+          <div class="flex flex-wrap gap-4 mb-4">
+            <div class="bg-yellow-700/80 border border-yellow-400 rounded-2xl px-6 py-4 text-white/90 max-w-xs shadow transition hover:scale-105">
               <span class="font-bold text-white">Mariam</span><br>
-              <span class="text-white/90 text-sm">"Koffi est un guide exceptionnel ! Grâce à lui, notre safari dans la Pendjari a été inoubliable. Il connaît parfaitement les animaux et sait où les trouver. Très professionnel et sympathique."</span>
+              <span class="text-white/90 text-sm">"Koffi est un guide exceptionnel ! Grâce à lui, notre safari dans la Pendjari a été inoubliable."</span>
             </div>
-            <div class="bg-yellow-700/80 border border-yellow-400 rounded-2xl px-6 py-4 text-white/90 max-w-xs">
+            <div class="bg-yellow-700/80 border border-yellow-400 rounded-2xl px-6 py-4 text-white/90 max-w-xs shadow transition hover:scale-105">
               <span class="font-bold text-white">Pierre</span><br>
-              <span class="text-white/90 text-sm">"Nous avons adoré l’expérience. Koffi a su nous mettre à l’aise dès le début. Il a pris le temps de répondre à toutes nos questions. Une vraie encyclopédie vivante du Nord Bénin."</span>
+              <span class="text-white/90 text-sm">"Nous avons adoré l’expérience. Koffi a su nous mettre à l’aise dès le début."</span>
             </div>
           </div>
+          <!-- Formulaire d'ajout de commentaire -->
+          <form class="bg-yellow-700/80 border border-yellow-400 rounded-2xl px-6 py-4 mb-2 flex flex-col gap-3 w-full shadow" id="commentForm">
+            <div class="flex flex-col gap-1">
+              <label for="name" class="text-white/90 font-semibold">Votre nom</label>
+              <input type="text" id="name" name="name" required class="rounded px-3 py-2 bg-white/90 text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition">
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="comment" class="text-white/90 font-semibold">Votre commentaire</label>
+              <textarea id="comment" name="comment" rows="2" required class="rounded px-3 py-2 bg-white/90 text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"></textarea>
+            </div>
+            <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-full transition-all duration-200 w-fit self-end shadow hover:scale-105">Ajouter</button>
+          </form>
         </div>
         <div
-          class="w-full md:w-96 flex flex-col gap-4 bg-black/40 border border-yellow-400 rounded-3xl p-8 shadow-lg justify-center items-center md:items-stretch">
+          class="w-full  md:w-96 flex flex-col gap-4 bg-black/50 backdrop-blur-md border border-yellow-400 rounded-3xl p-8 shadow-2xl justify-center items-center md:items-stretch">
           <a href="#"
-            class="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-3 rounded-xl text-center transition flex items-center justify-center gap-2 mb-2">Voir
+            class="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-3 rounded-xl text-center transition-all duration-200 flex items-center justify-center gap-2 mb-2 shadow hover:scale-105">Voir
             les tarifs <svg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5' fill='none' viewBox='0 0 24 24'
               stroke='currentColor'>
               <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8v4l3 3' />
             </svg></a>
           <a href="#"
-            class="w-full border-2 border-yellow-400 text-white font-semibold py-3 rounded-xl text-center transition hover:bg-yellow-400 hover:text-gray-900 flex items-center justify-center gap-2"><svg
+            class="w-full border-2 border-yellow-400 text-white font-semibold py-3 rounded-xl text-center transition-all duration-200 hover:bg-yellow-400 hover:text-gray-900 flex items-center justify-center gap-2 shadow hover:scale-105"><svg
               xmlns='http://www.w3.org/2000/svg' class='w-5 h-5' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
               <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
                 d='M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9' />
