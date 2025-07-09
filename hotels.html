@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôtels et Restaurants - Bénin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Poppins] bg-gray-900">
+    <div class="relative min-h-screen flex flex-col bg-cover bg-center"
+        style="background-image: url('./assets/img/benin-hero-BB2B5jZH.jpg');">
+        <div class="absolute inset-0 bg-black/70 z-0"></div>
+        <nav
+            class="relative z-10 flex items-center justify-between px-8 py-2 mt-4 mx-auto w-full max-w-6xl rounded-2xl bg-white/70 backdrop-blur-md shadow-lg">
+            <div class="flex items-center gap-2">
+                <a href="index.html"><img src="assets/img/3 1.png" alt="logo" class=""></a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-gray-800 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <ul id="menu" class="hidden md:flex gap-8 text-gray-800 font-medium">
+                <li><a href="index.html" class="hover:text-yellow-600 transition">Accueil</a></li>
+                <li><a href="sites.html" class="hover:text-yellow-600 transition">Sites Touristiques</a></li>
+                <li><a href="guides.html" class="hover:text-yellow-600 transition">Guides Touristiques</a></li>
+                <li><a href="hotels.html" class="hover:text-yellow-600 transition">Hôtels et Restaurants</a></li>
+                <li><a href="#" class="hover:text-yellow-600 transition">A propos</a></li>
+            </ul>
+            <a href="guide_register.html"
+                class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-5 py-2 rounded-xl shadow transition">Je
+                suis guide</a>
+        </nav>
+        <main class="relative z-10 flex flex-col items-center w-full px-4 pt-16 pb-8">
+            <div class="max-w-6xl w-full mx-auto mt-12">
+                <h1 class="text-white text-5xl md:text-6xl font-extrabold mb-2">Hôtels et Restaurants</h1>
+                <p class="text-gray-200 text-lg md:text-xl mb-8 max-w-3xl">Découvrez les meilleurs hébergements et
+                    restaurants du Bénin. Séjournez dans des établissements authentiques et savourez la cuisine locale
+                    exceptionnelle.</p>
+                <div class="flex flex-wrap items-center gap-4 mb-10">
+                    <span class="text-white font-semibold text-lg">Filtrer par :</span>
+                    <button id="filter-all"
+                        class="filter-btn bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-full transition">Tout</button>
+                    <button id="filter-hotels"
+                        class="filter-btn bg-white/20 hover:bg-yellow-400 hover:text-gray-900 text-white font-semibold px-6 py-2 rounded-full transition">Hôtels</button>
+                    <button id="filter-restaurants"
+                        class="filter-btn bg-white/20 hover:bg-yellow-400 hover:text-gray-900 text-white font-semibold px-6 py-2 rounded-full transition">Restaurants</button>
+                    <div class="relative">
+                        <button id="dropdownVilleBtn"
+                            class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-full flex items-center gap-2 transition focus:outline-none">
+                            Villes
+                            <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24'
+                                stroke='currentColor'>
+                                <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
+                                    d='M19 9l-7 7-7-7' />
+                            </svg>
+                        </button>
+                        <div id="dropdownVille"
+                            class="hidden absolute left-0 mt-2 w-48 bg-white rounded-xl shadow-lg z-20">
+                            <a href="#" class="block px-4 py-2 hover:bg-yellow-100 text-gray-900">Cotonou</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-yellow-100 text-gray-900">Porto-Novo</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-yellow-100 text-gray-900">Abomey</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-yellow-100 text-gray-900">Tanguiéta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div
+                        class="establishment-card hotel bg-black/40 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative h-48">
+                            <img src="assets/img/benin-royal-hotel-general-1256d894.jpg" alt="Benin Royal Hotel"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div
+                                class="absolute top-4 left-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full font-semibold text-sm">
+                                Hôtel</div>
+                            <div
+                                class="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full font-semibold text-sm flex items-center gap-1">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 text-yellow-300'
+                                    fill='currentColor' viewBox='0 0 20 20'>
+                                    <path
+                                        d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z' />
+                                </svg>
+                                4.5
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-white text-xl font-bold mb-2">Benin Royal Hotel</h3>
+                            <div class="flex items-center gap-2 text-gray-300 mb-3">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5 text-yellow-400' fill='none'
+                                    viewBox='0 0 24 24' stroke='currentColor'>
+                                    <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
+                                        d='M17.657 16.657L13.414 12.414a4 4 0 10-1.414 1.414l4.243 4.243a1 1 0 001.414-1.414z' />
+                                </svg>
+                                <span>Cotonou, Bénin</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">Hôtel de luxe au cœur de Cotonou avec vue sur l'océan.
+                                Piscine, spa et restaurant gastronomique.</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#"
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-lg transition">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="establishment-card restaurant bg-black/40 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative h-48">
+                            <img src="assets/img/ENhhhEJXUAIdoyk.webp" alt="Eden"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div
+                                class="absolute top-4 left-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full font-semibold text-sm">
+                                Restaurant</div>
+                            <div
+                                class="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full font-semibold text-sm flex items-center gap-1">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 text-yellow-300'
+                                    fill='currentColor' viewBox='0 0 20 20'>
+                                    <path
+                                        d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z' />
+                                </svg>
+                                4.8
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-white text-xl font-bold mb-2">Eden food</h3>
+                            <div class="flex items-center gap-2 text-gray-300 mb-3">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5 text-yellow-400' fill='none'
+                                    viewBox='0 0 24 24' stroke='currentColor'>
+                                    <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
+                                        d='M17.657 16.657L13.414 12.414a4 4 0 10-1.414 1.414l4.243 4.243a1 1 0 001.414-1.414z' />
+                                </svg>
+                                <span>Cotonou, Bénin</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">Situé en plein cœur de Cotonou, Eden Food est un
+                                restaurant chaleureux qui propose une cuisine fusion .</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#"
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-lg transition">Voir
+                                    menu</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="establishment-card hotel bg-black/40 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative h-48">
+                            <img src="assets/img/benin-royal-hotel.jpg" alt="Auberge de Grand Popo"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div
+                                class="absolute top-4 left-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full font-semibold text-sm">
+                                Hôtel</div>
+                            <div
+                                class="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full font-semibold text-sm flex items-center gap-1">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 text-yellow-300'
+                                    fill='currentColor' viewBox='0 0 20 20'>
+                                    <path
+                                        d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z' />
+                                </svg>
+                                4.3
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-white text-xl font-bold mb-2">Sofitel cotonou</h3>
+                            <div class="flex items-center gap-2 text-gray-300 mb-3">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5 text-yellow-400' fill='none'
+                                    viewBox='0 0 24 24' stroke='currentColor'>
+                                    <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
+                                        d='M17.657 16.657L13.414 12.414a4 4 0 10-1.414 1.414l4.243 4.243a1 1 0 001.414-1.414z' />
+                                </svg>
+                                <span>Cotonou, Bénin</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">Situé au cœur de Cotonou, le Sofitel Hôtel allie
+                                élégance moderne et hospitalité africaine.</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#"
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-lg transition">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="establishment-card restaurant bg-black/40 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative h-48">
+                            <img src="assets/img/A8CDD6AA-1C72-470C-8E68-4B5FAE7CE5B2.jpeg" alt="La Pirogue"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div
+                                class="absolute top-4 left-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full font-semibold text-sm">
+                                Restaurant</div>
+                            <div
+                                class="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full font-semibold text-sm flex items-center gap-1">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 text-yellow-300'
+                                    fill='currentColor' viewBox='0 0 20 20'>
+                                    <path
+                                        d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z' />
+                                </svg>
+                                4.6
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-white text-xl font-bold mb-2">La Pirogue</h3>
+                            <div class="flex items-center gap-2 text-gray-300 mb-3">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5 text-yellow-400' fill='none'
+                                    viewBox='0 0 24 24' stroke='currentColor'>
+                                    <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
+                                        d='M17.657 16.657L13.414 12.414a4 4 0 10-1.414 1.414l4.243 4.243a1 1 0 001.414-1.414z' />
+                                </svg>
+                                <span>Ganvié, Bénin</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">Situé dans un cadre paisible à proximité de la mer, La
+                                Pirogue est un restaurant réputé à Cotonou .</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#"
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-lg transition">Voir
+                                    menu</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="establishment-card hotel bg-black/40 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative h-48">
+                            <img src="assets/img/b845_ho_00_p_1024x768.jpg" alt="Golden"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div
+                                class="absolute top-4 left-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full font-semibold text-sm">
+                                Hôtel</div>
+                            <div
+                                class="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full font-semibold text-sm flex items-center gap-1">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 text-yellow-300'
+                                    fill='currentColor' viewBox='0 0 20 20'>
+                                    <path
+                                        d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z' />
+                                </svg>
+                                4.2
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-white text-xl font-bold mb-2">Golden Tulip</h3>
+                            <div class="flex items-center gap-2 text-gray-300 mb-3">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5 text-yellow-400' fill='none'
+                                    viewBox='0 0 24 24' stroke='currentColor'>
+                                    <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
+                                        d='M17.657 16.657L13.414 12.414a4 4 0 10-1.414 1.414l4.243 4.243a1 1 0 001.414-1.414z' />
+                                </svg>
+                                <span>cotonou, Bénin</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">Hôtel traditionnel près des palais royaux. Idéal pour
+                                découvrir l'histoire du royaume du Dahomey.</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#"
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-lg transition">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="establishment-card restaurant bg-black/40 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative h-48">
+                            <img src="assets/img/carpe-diem-bar-a-vins.jpg" alt="Le Baobab"
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div
+                                class="absolute top-4 left-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full font-semibold text-sm">
+                                Restaurant</div>
+                            <div
+                                class="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full font-semibold text-sm flex items-center gap-1">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 text-yellow-300'
+                                    fill='currentColor' viewBox='0 0 20 20'>
+                                    <path
+                                        d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z' />
+                                </svg>
+                                4.4
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-white text-xl font-bold mb-2">Le Baobab</h3>
+                            <div class="flex items-center gap-2 text-gray-300 mb-3">
+                                <svg xmlns='http://www.w3.org/2000/svg' class='w-5 h-5 text-yellow-400' fill='none'
+                                    viewBox='0 0 24 24' stroke='currentColor'>
+                                    <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
+                                        d='M17.657 16.657L13.414 12.414a4 4 0 10-1.414 1.414l4.243 4.243a1 1 0 001.414-1.414z' />
+                                </svg>
+                                <span>Natitingou, Bénin</span>
+                            </div>
+                            <p class="text-gray-400 text-sm mb-4">Restaurant gastronomique fusion. Mélange harmonieux
+                                entre cuisine locale et influences internationales.</p>
+                            <div class="flex items-center justify-between">
+                                <a href="#"
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-4 py-2 rounded-lg transition">Voir
+                                    menu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-2 mt-4">
+                    <button
+                        class="w-10 h-10 rounded-full bg-yellow-400 text-gray-900 font-bold flex items-center justify-center">1</button>
+                    <button
+                        class="w-10 h-10 rounded-full border-2 border-gray-400 text-white font-bold flex items-center justify-center">2</button>
+                    <button
+                        class="w-10 h-10 rounded-full border-2 border-gray-400 text-white font-bold flex items-center justify-center">3</button>
+                    <button
+                        class="ml-4 flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-xl transition">
+                        Suivant <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const establishmentCards = document.querySelectorAll('.establishment-card');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-yellow-400', 'text-gray-900');
+                    btn.classList.add('bg-white/20', 'text-white');
+                });
+                this.classList.remove('bg-white/20', 'text-white');
+                this.classList.add('bg-yellow-400', 'text-gray-900');
+                const filter = this.id.replace('filter-', '');
+                establishmentCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else if (filter === 'hotels' && card.classList.contains('hotel')) {
+                        card.style.display = 'block';
+                    } else if (filter === 'restaurants' && card.classList.contains('restaurant')) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        const dropdownVilleBtn = document.getElementById('dropdownVilleBtn');
+        const dropdownVille = document.getElementById('dropdownVille');
+        dropdownVilleBtn.addEventListener('click', function () {
+            dropdownVille.classList.toggle('hidden');
+        });
+        document.addEventListener('click', function (event) {
+            if (!dropdownVille.contains(event.target) && !dropdownVilleBtn.contains(event.target)) {
+                dropdownVille.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
